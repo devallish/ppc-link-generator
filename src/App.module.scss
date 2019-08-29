@@ -1,0 +1,44 @@
+@import "./colours";
+@import "./typography";
+
+.outer_container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+}
+.header_container {
+  color: $primary-text-colour;
+}
+.content_container {
+  color: $content-text-colour;
+}
+.footer_container {
+  color: $secondary-text-colour;
+}
+.label_container{
+  padding: 1rem;
+}
+.practice_id_input {
+  font-family: $code-font-family;
+  font-size: inherit;
+  width: 300px;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.sample_link_container {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+.button_container {
+  padding: 1rem;
+}
+.button {
+  padding: 0.7rem 3rem;
+  background-color: $action-colour;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border: none;
+  &:hover {
+    background-color: darken($action-colour, 10);
+  }
+}
